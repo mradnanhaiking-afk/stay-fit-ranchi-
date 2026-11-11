@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#111111">
-<meta name="description" content="STAY FIT RANCHI - Transform your body, elevate your lifestyle. Premium fitness training in Ranchi.">
+<meta name="description" content="STAY FIT RANCHI - Transform your body, elevate your lifestyle.">
 <title>STAY FIT RANCHI | Train Beyond Limits</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
 :root {
@@ -296,46 +297,12 @@ section { padding: 110px 0; }
   margin-bottom: 8px;
 }
 
-/* SERVICES */
+/* SERVICES - CARDS REMOVED */
 
 .services { background: #151515; }
 
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 22px;
-}
-
-.service-card {
-  background: #202020;
-  padding: 38px 30px;
-  border-bottom: 3px solid transparent;
-  transition: .35s;
-}
-
-.service-card:hover {
-  transform: translateY(-10px);
-  border-color: var(--red);
-  background: #252525;
-}
-
-.service-icon {
-  color: var(--red);
-  font-size: 35px;
-  margin-bottom: 24px;
-}
-
-.service-card h3 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 28px;
-  text-transform: uppercase;
-  margin-bottom: 13px;
-}
-
-.service-card p {
-  color: #999;
-  font-size: 12px;
-  line-height: 1.9;
+.services .section-heading {
+  margin-bottom: 0;
 }
 
 /* TRAINING */
@@ -467,9 +434,34 @@ section { padding: 110px 0; }
 }
 
 .contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   margin-top: 25px;
   font-size: 13px;
   font-weight: 700;
+  transition: .3s;
+}
+
+.contact-detail i {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--red);
+  color: white;
+  font-size: 17px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.contact-detail a {
+  transition: .3s;
+}
+
+.contact-detail a:hover {
+  color: var(--red);
 }
 
 .contact-form input,
@@ -527,6 +519,32 @@ footer p {
 
 .footer-links a:hover { color: var(--red); }
 
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 25px 0;
+}
+
+.footer-socials a {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  transition: .3s;
+}
+
+.footer-socials a:hover {
+  background: var(--red);
+  border-color: var(--red);
+  color: white;
+  transform: translateY(-4px);
+}
+
 .copyright {
   border-top: 1px solid #222;
   padding-top: 22px;
@@ -572,7 +590,7 @@ footer p {
 
   .about-image { height: 350px; margin: 0 15px 20px 0; }
 
-  .service-grid,.training-grid { grid-template-columns: 1fr; }
+  .training-grid { grid-template-columns: 1fr; }
 
   .training-card { height: 380px; }
 
@@ -583,7 +601,6 @@ footer p {
   .hero h1 { font-size: 60px; }
   .hero-bottom { font-size: 9px; }
   .stat h2 { font-size: 35px; }
-  .service-card { padding: 30px 24px; }
 }
 </style>
 </head>
@@ -614,12 +631,15 @@ footer p {
 <section class="hero" id="home">
   <div class="container hero-content reveal">
     <div class="eyebrow">Welcome to Stay Fit Ranchi</div>
-    <h1>BUILD YOUR <span>BEST SELF.</span></h1>
+
+    <h1>STAY FIT <span>RANCHI.</span></h1>
+
     <p>
       Your journey. Your strength. Your transformation.
       Step into a better version of yourself with professional
       fitness training and a community that pushes you forward.
     </p>
+
     <a href="#contact" class="btn">Start Your Journey →</a>
   </div>
 
@@ -676,44 +696,6 @@ footer p {
       <div class="eyebrow">What We Offer</div>
       <h2>TRAIN HARDER. <span>LIVE BETTER.</span></h2>
       <p>Training experiences designed to support your fitness journey.</p>
-    </div>
-
-    <div class="service-grid">
-      <div class="service-card reveal">
-        <div class="service-icon">✦</div>
-        <h3>Strength Training</h3>
-        <p>Build strength and improve your performance with structured resistance training.</p>
-      </div>
-
-      <div class="service-card reveal">
-        <div class="service-icon">◈</div>
-        <h3>Personal Training</h3>
-        <p>Get individual guidance and training support according to your fitness goals.</p>
-      </div>
-
-      <div class="service-card reveal">
-        <div class="service-icon">⚡</div>
-        <h3>Cardio Fitness</h3>
-        <p>Improve endurance and cardiovascular fitness through active workouts.</p>
-      </div>
-
-      <div class="service-card reveal">
-        <div class="service-icon">◆</div>
-        <h3>Weight Training</h3>
-        <p>Follow progressive workout routines and improve your overall fitness.</p>
-      </div>
-
-      <div class="service-card reveal">
-        <div class="service-icon">✧</div>
-        <h3>Functional Fitness</h3>
-        <p>Develop mobility, balance and strength for everyday movement.</p>
-      </div>
-
-      <div class="service-card reveal">
-        <div class="service-icon">★</div>
-        <h3>Fitness Guidance</h3>
-        <p>Get guidance to build consistent habits and a sustainable fitness routine.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -772,7 +754,7 @@ footer p {
       Progress is built through consistency, patience
       and determination. Make your next move count.
     </p>
-    <small>STAY FIT RANCHI</small>
+    <small>ELEMENTOR #1233</small>
   </div>
 </section>
 
@@ -790,9 +772,30 @@ footer p {
         training details and enquiries.
       </p>
 
-      <div class="contact-detail">📍 Ranchi, Jharkhand, India</div>
-      <div class="contact-detail">☎ Phone: Add your gym number</div>
-      <div class="contact-detail">✉ Email: Add your gym email</div>
+      <div class="contact-detail">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Ranchi, Jharkhand, India</span>
+      </div>
+
+      <div class="contact-detail">
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:+917654418002">+91 7654418002</a>
+      </div>
+
+      <div class="contact-detail">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:mradnanmustafa9@gmail.com">
+          mradnanmustafa9@gmail.com
+        </a>
+      </div>
+
+      <div class="contact-detail">
+        <i class="fa-brands fa-instagram"></i>
+        <a href="https://www.instagram.com/mradnan_7284?vrfl=ajduZnk0dHNzY3cw"
+           target="_blank" rel="noopener noreferrer">
+          @mradnan_7284
+        </a>
+      </div>
     </div>
 
     <form class="contact-form reveal" id="contactForm">
@@ -819,6 +822,21 @@ footer p {
       <a href="#services">Services</a>
       <a href="#training">Training</a>
       <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-socials">
+      <a href="tel:+917654418002" aria-label="Call">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+
+      <a href="mailto:mradnanmustafa9@gmail.com" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+
+      <a href="https://www.instagram.com/mradnan_7284?vrfl=ajduZnk0dHNzY3cw"
+         target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
     </div>
 
     <p class="copyright">© 2026 STAY FIT RANCHI. All Rights Reserved.</p>
@@ -860,6 +878,7 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 document.getElementById('contactForm').addEventListener('submit', e => {
   e.preventDefault();
+
   document.getElementById('formMessage').textContent =
     'Demo form only. Connect a backend or WhatsApp to receive enquiries.';
 });
